@@ -1,4 +1,4 @@
-#iclude <string>
+#include <string>
 #ifndef _Client_h
 #define _Client_h
 class Client
