@@ -5,17 +5,18 @@
 	Matiere: C-C++ Programming / Esirem 3A IT 
 	*/
 #include <string>
-#include <iostream>
+#include <array>
 #ifndef _Hotel_h
 #define _Hotel_h 
 class Hotel
 {
 public:
 	Hotel(int id, std::string name, std::string city, int roomlist);
-	int getId() const;
-	int getRoomlist() const;
-	std::string getName() const;
-	std::string getCity() const;
+	int getId();
+	int getRoomlist();
+	std::string getName();
+	std::string getCity();
+	Hotel tabChambre();
 
 private:
 int m_id;
