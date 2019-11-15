@@ -26,6 +26,7 @@ private:
 int m_id;
 int m_roomlist;
 std::string m_name;
-std::string m_city;	
+std::string m_city;
+int * tabRoom = NULL;
 };
 #endif
