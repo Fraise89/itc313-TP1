@@ -5,31 +5,39 @@
 
 using namespace std;
 
-class Reservation(){
+class Reservation{
 	public:
-	Reservation(int inputIDReservation, Date inputDateDebut, Date inputDateFin, int inputIDHotel, int inputIDChambre, int inputIDClient, int inputSoldeTotal);
+	Reservation(int inputIDReservation, int inputDayBeginn, int inputMounthBeginn, int inputYearBeginn, int inputDayEnd, int inputMounthEnd, int inputYearEnd, int inputIDHotel, int inputIDChambre, int inputIDClient, int inputSoldeTotal);
 	int getIDReservation();
-	Date getDateDebut();
-	Date getDateFin();
+	int getDayBeginn();
+	int getMounthBeginn();
+	int getYearBeginn();
+	int getDayEnd();
+	int getMounthEnd();
+	int getYearEnd();
 	int getIDHotel();
 	int getIDChambre();
 	int getIDClient();
 	int getSoldeTotal();
-	int CalculSoldeTotal();
+	int calculSoldeTotal(int prix);
 	void setIDReservation(int inputIDReservation);
-	void setDateDebut(Date inputDateDebut);
-	void setDateFin(Date inputDateFin);
+	void setDayBeginn(int inputDayBeginn);
+	void setMounthBeginn(int inputMounthBeginn);
+	void setYearBeginn(int inputYearBeginn);
+	void setDayEnd(int inputDayEnd);
+	void setMounthEnd(int inputMounthEnd);
+	void setYearEnd(int inputYearEnd);
 	void setIDHotel(int inputIDHotel);
 	void setIDChambre(int inputIDChambre);
 	void setIDClient(int inputIDClient);
 	void setSoldeTotal(int inputSoldeTotal);
 	private:
 	int IDReservation;
-	Date dateDebut;
-	Date dateFin;
+	int dayBeginn, mounthBeginn, yearBeginn, dayEnd, mounthEnd, yearEnd;
 	int IDHotel;
 	int IDChambre;
 	int IDClient;
 	int soldeTotal;
 	
 };
+#endif
