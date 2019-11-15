@@ -16,6 +16,7 @@ public:
 	int getRoomlist() const;
 	std::string getName() const;
 	std::string getCity() const;
+	Hotel tabChambre();
 
 private:
 int m_id;
