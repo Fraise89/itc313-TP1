@@ -21,7 +21,7 @@ std::string Hotel::getName(){
 std::string Hotel::getCity(){
 	return m_city;
 }
-Hotel Hotel::initTabChambre(int roomlist, int *tabRoom){
+void Hotel::initTabChambre(int roomlist, int *tabRoom){
 	tabRoom = new int [roomList];
 }
 void Hotel::setStateRoom(int index, int state, int *tabRoom){
