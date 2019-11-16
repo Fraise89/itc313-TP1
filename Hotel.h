@@ -20,7 +20,7 @@ public:
 	int getRoomlist() const;
 	std::string getName() const;
 	std::string getCity() const;
-	void tabChambre();
+	void initTabChambre();
 
 private:
 int m_id;
